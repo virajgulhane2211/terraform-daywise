@@ -63,6 +63,7 @@ resource "aws_eip" "nat" {
   }
 }
 
+
 # NAT Gateway in Public Subnet
 resource "aws_nat_gateway" "dev" {
   allocation_id = aws_eip.nat.id
