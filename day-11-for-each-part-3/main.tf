@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "env" {
   type    = list(string)
-  default = ["one","three"]
+  default = ["dev","test","prod"]
 }
 
 resource "aws_instance" "sandbox" {
